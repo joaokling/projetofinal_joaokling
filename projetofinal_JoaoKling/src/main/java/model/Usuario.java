@@ -1,20 +1,16 @@
 package model;
 
-public class Usuario extends Pessoa {
+public class Usuario {
 
     private String login;
     private String senha;
 
-    public Usuario(long id, String nome, String contato,
-                   String login, String senha) {
-
-        super(id, nome, contato);
-
+    public Usuario(String login, String senha) {
         this.login = login;
         this.senha = senha;
     }
 
     public boolean autenticar(String login, String senha) {
-        return this.login.equals(login) && this.senha.equals(senha);
+        return this.login == login && this.senha == senha;
     }
 }
