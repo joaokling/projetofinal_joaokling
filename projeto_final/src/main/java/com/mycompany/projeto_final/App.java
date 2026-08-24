@@ -36,20 +36,7 @@ public class App extends Application {
 
         Label mensagemCadastro = new Label();
 
-        cadastro.getChildren().addAll(
-                tituloCadastro,
-                lblNome,
-                txtNome,
-                lblCPF,
-                txtCPF,
-                lblData,
-                txtData,
-                lblGenero,
-                txtGenero,
-                btnCadastrar,
-                btnCancelarCadastro,
-                mensagemCadastro
-        );
+        cadastro.getChildren().addAll( tituloCadastro, lblNome, txtNome,lblCPF,txtCPF,lblData, txtData, lblGenero,txtGenero, btnCadastrar,btnCancelarCadastrada mensagemCadastro);
 
         Scene sceneCadastro = new Scene(cadastro, 500, 450);
 
